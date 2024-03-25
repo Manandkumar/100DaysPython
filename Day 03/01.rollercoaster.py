@@ -1,4 +1,4 @@
-print ("Welcome to the Rollercoasgter !")
+print ("Welcome to the Rollercoaster !")
 #take necessary information from the user 
 
 # = is assignment and ==  is checking 

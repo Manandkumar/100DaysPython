@@ -8,5 +8,4 @@ age=int(current_age)
 #caluculation
 life_span= 90-age
 weeks_left=life_span*52
-
-print("Life left for you is Weeks."{weeks_left})
+print ("Life left for you is Weeks.",weeks_left)

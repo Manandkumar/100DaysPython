@@ -11,7 +11,7 @@ state_of_India[1] = "Telangana"
 print(state_of_India)
 
 # Extending the items to list 
-state_of_India.extend =["AP", "TS"]
+state_of_India.extend('AP')
 print(state_of_India)
 
       

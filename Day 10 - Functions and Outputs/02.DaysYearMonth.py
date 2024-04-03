@@ -18,10 +18,10 @@ def is_leapyear(year):
 
 def days_in_month(year,month):
     month_days =['31','28','31','30','31','30','31','31','30','31','30','31',]
-    chkdays = month_days[month]
+    chkdays = month_days[month-1]
     chkyear = is_leapyear(year)
-    if chkyear == 1 and month ==2:
-        chkdays == 29
+    if chkyear == 1:
+        chkdays[1]==29
         print(f"It's a Leap year and days are {chkdays}")
     elif chkyear == 0:
         chkdays = month_days[month-1]

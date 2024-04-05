@@ -12,3 +12,5 @@ def drink_potion():
    print(postion_strenght)
 drink_potion()
 #print(portion_strenght) - wont' work as as variable has local scope
+
+# local and global is applicable not just for variables, it's for anything user names and scope  it's called namespace

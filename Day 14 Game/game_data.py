@@ -1,0 +1,23 @@
+data = [
+    {'handler': 'instagram','name':'Instagram','count':'672','description':'Social media platform','country':' United States'},
+{'handler': 'cristiano','name':'Cristiano Ronaldo','count':'627','description':'Footballer','country':' Portugal'},
+{'handler': 'leomessi','name':'Lionel Messi','count':'502','description':'Footballer','country':' Argentina'},
+{'handler': 'selenagomez','name':'Selena Gomez','count':'429','description':'Musician and actress','country':' United States'},
+{'handler': 'kyliejenner','name':'Kylie Jenner','count':'400','description':'Media personality','country':' United States'},
+{'handler': 'therock','name':'Dwayne Johnson','count':'397','description':'Actor and professional wrestler','country':' United States'},
+{'handler': 'arianagrande','name':'Ariana Grande','count':'380','description':'Musician and actress','country':' United States'},
+{'handler': 'kimkardashian','name':'Kim Kardashian','count':'364','description':'Media personality','country':' United States'},
+{'handler': 'beyonce','name':'Beyoncé','count':'320','description':'Musician and actress','country':' United States'},
+{'handler': 'khloekardashian','name':'Khloé Kardashian','count':'310','description':'Media personality','country':' United States'},
+{'handler': 'nike','name':'Nike','count':'307','description':'Sportswear multinational','country':' United States'},
+{'handler': 'kendalljenner','name':'Kendall Jenner','count':'294','description':'Media personality','country':' United States'},
+{'handler': 'justinbieber','name':'Justin Bieber','count':'292','description':'Musician','country':' Canada'},
+{'handler': 'natgeo','name':'National Geographic','count':'284','description':'Magazine','country':' United States'},
+{'handler': 'taylorswift','name':'Taylor Swift','count':'283','description':'Musician','country':' United States'},
+{'handler': 'virat.kohli','name':'Virat Kohli','count':'267','description':'Cricketer','country':' India'},
+{'handler': 'jlo','name':'Jennifer Lopez','count':'253','description':'Musician and actress','country':' United States'},
+{'handler': 'nickiminaj','name':'Nicki Minaj','count':'229','description':'Musician','country':' Trinidad and Tobago'},
+{'handler': 'kourtneykardash','name':'Kourtney Kardashian','count':'224','description':'Media personality','country':' United States'},
+{'handler': 'neymarjr','name':'Neymar','count':'220','description':'Footballer','country':' Brazil'},
+
+]

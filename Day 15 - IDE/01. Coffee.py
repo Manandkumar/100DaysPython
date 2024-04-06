@@ -11,6 +11,31 @@
 # check trascation succesful
 # manage resources 
 
+WATER=300
+MILK=200
+COFFEE=100
+MONEY= 0
 
-u_choice = input(int(("What would you like? press your choice : 1. Espresso/ 2. Latte/ 3. Cappuccino")))
+#def check_resources():
+    
+def user_transaction():
+    print("Step #1")
 
+def usage_report():
+    print(WATER,MILK, COFFEE)
+
+coffee_continue = True
+
+while coffee_continue:
+    
+    u_choice = int(input(("What would you like? press your choice : 1. Espresso/ 2. Latte/ 3. Cappuccino")))
+
+    if u_choice == 1 and WATER >= 50 and COFFEE >=18:
+        user_transaction()
+        WATER -=50
+        COFFEE -=18
+        usage_report()
+    else:
+        print("Insufficient resources")
+        usage_report()
+        coffee_continue == False

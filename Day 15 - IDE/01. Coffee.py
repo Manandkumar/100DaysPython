@@ -19,7 +19,7 @@ COFFEE=100
 #def check_resources():
     
 def user_transaction(choice,amount):
-    print(f"Your choice of drink is {choice}, it cost {amount}, and please pay in cash")
+    print(f"Your choice of drink is {choice}, it cost {amount} Rs, and please pay in cash")
     global MONEY
     change_1= int(input("Enter how many 10 Rs: "))
     change_2= int(input("Enter how many 50 Rs: "))
@@ -44,7 +44,7 @@ def resources_reset():
     WATER +=300 
     MILK += 200
     COFFEE += 100
-    print(f"Report after Refilling \n Water: {WATER} \n Milk: {MILK} \n Coffee: {COFFEE}\n Total Amount collected: {MONEY}")
+    print(f"Report after Refilling \n Water: {WATER} ml \n Milk: {MILK} ml \n Coffee: {COFFEE} gms\n Total Amount collected: {MONEY} Rs")
 
 def main_function():
     global WATER,COFFEE,MILK,MONEY

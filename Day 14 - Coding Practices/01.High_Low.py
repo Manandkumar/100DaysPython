@@ -1,6 +1,7 @@
 
 from game_data import data
 import random
+import os
 
 def format_data(account):
     """Format the account data from file to printable format """

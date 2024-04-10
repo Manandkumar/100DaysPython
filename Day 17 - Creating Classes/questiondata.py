@@ -1,5 +1,5 @@
 question_data =[
-    {"text":"Do camels have three sets of eyelids?", "answer": "Tue"},
+    {"text":"Do camels have three sets of eyelids?", "answer": "True"},
     {"text":"It is possible to sneeze while sleeping", "answer": "FALSE"},
     {"text":"Australia is a country as well as a continent.", "answer": "TRUE"},
     {"text":"Herbivore animals consume meat", "answer": "FALSE"},

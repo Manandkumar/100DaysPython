@@ -20,11 +20,12 @@ my_leo.forward(300)
 my_leo.setheading(0)
 
 number_of_dots =100
+my_leo.hideturtle()
 
 
-for dot_count in range(1,number_of_dots):
+for dot_count in range(1,number_of_dots+1):
     my_leo.pendown()
-    my_leo.dot(50,random_color())
+    my_leo.dot(20,random_color())
     my_leo.penup()
     my_leo.forward(50)  
     if dot_count %10==0:

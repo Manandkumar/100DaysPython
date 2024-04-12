@@ -13,7 +13,7 @@ def random_color():
     colour = (r,g,b)
     return colour
 
-my_leo.speed("fastest")
+my_leo.speed(10)
 c_radius = int(input("Enter the radius of the circle: "))
 
 

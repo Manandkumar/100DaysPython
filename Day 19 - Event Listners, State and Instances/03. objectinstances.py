@@ -28,6 +28,16 @@ while race_on:
     for turtle in all_turles:
         move_forward = random.randint(0,10)
         turtle.forward(move_forward)
+        if turtle.xcor() > 180:
+            race_on= False
+            winner = turtle.pencolor()
+            if winner == user_color:
+                print(f"Congratulation!! You won!! winner is {winner} Color")
+            else:
+                print(f"Sorry!! You Lost, winner is {winner} Color")
+                my_screen.title(winner)
+
+
 
 
 my_screen.exitonclick()

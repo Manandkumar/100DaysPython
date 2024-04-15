@@ -10,7 +10,13 @@ snake_screen.title("My Snake Game!")
 snake_screen.tracer(0)
 
 snake = Snake()
+
 # Move the snake 
+snake_screen.listen()
+snake_screen.onkey(snake.up, "Up")
+snake_screen.onkey(snake.down, "Down")
+snake_screen.onkey(snake.left, "Left")
+snake_screen.onkey(snake.right, "Right")
 
 game_on = True
 

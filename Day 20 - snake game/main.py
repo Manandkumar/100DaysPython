@@ -30,8 +30,8 @@ while game_on:
     time.sleep(0.1)
     snake.move()
     if snake.head.distance(food)< 15:
-        print("Touched")
         food.refresh()
+        scoreboard.increase_score()
 
 # Dreate the scoreboard
 

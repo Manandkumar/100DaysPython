@@ -10,6 +10,10 @@ class Fish(Animal):
 
     def swim(self):
         print ("Moving in water")
+    
+    def breathe(self):
+        super().breathe()
+        print ("Doing this under water...")
 
 nemo = Fish()
 nemo.swim()

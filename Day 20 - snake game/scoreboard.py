@@ -7,12 +7,21 @@ class Scoreboard(Turtle):
         super().__init__()
         self.score =0
         self.penup()
-        self.color=("white")
-        self.goto(0,0)
-        self.write(f"Score: {self.score}", align=ALIGNMENT,font=FONT)
+        self.color=('white')
+        self.goto(0,270)
         self.hideturtle()
+        self.udpate_scoreboard()
     
+    def udpate_scoreboard(self):
+        self.write(f"Score: {self.score}", align=ALIGNMENT,font=FONT)
+
     def increase_score(self):
         self.score+=1
-        self.write(f"Score: {self.score}", align=ALIGNMENT,font=FONT)
+        self.clear()
+        self.print(f"Score: {self.score}", align=ALIGNMENT,font=FONT)
         print(self.score)
+    
+    def game_over(self):
+        self.goto(0,0)
+        self.color("white")
+        self.write("Game Over")

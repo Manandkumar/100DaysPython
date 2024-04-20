@@ -7,9 +7,21 @@ class Ball(Turtle):
         self.shape("circle")
         self.color("yellow")
         self.penup()
+        self.x_move =10
+        self.y_move=10
     
     def move(self):
-        if self.xcor() <375 and self.ycor< -370:
-            new_x = self.xcor()+1
-            new_y = self.ycor()+1
+  #      if self.xcor() <375 and self.ycor()< -370:
+            new_x = self.xcor()+ self.x_move
+            new_y = self.ycor()+ self.y_move
             self.goto(new_x,new_y)
+    
+    def bounce_y(self):
+         self.y_move*=-1
+    
+    def bounce_x(self):
+        self.x_move*=-1
+    
+    def reset_position(self):
+         self.goto(0,0)
+         self.bounce_x()

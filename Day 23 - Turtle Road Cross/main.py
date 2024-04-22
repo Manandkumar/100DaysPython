@@ -25,6 +25,10 @@ while game_on:
     for car in car_manger.all_car:
         if car.distance(player) <20:
             game_on= False
+    #detect the crossing 
+    if player.is_at_finish_line():
+        player.go_to_start()
+        car_manger.level_up()
 
     
 

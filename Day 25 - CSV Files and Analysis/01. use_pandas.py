@@ -9,4 +9,4 @@ with open("./Day 25 - CSV Files and Analysis/weather_data.csv") as my_file:
     print (temperature)
 
 data=pandas.read_csv(("./Day 25 - CSV Files and Analysis/weather_data.csv"))
-print(data)
+print(data["Tem"])

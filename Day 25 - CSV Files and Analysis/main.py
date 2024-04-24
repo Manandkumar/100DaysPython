@@ -1,4 +1,4 @@
-import csv
+import csv, pandas
 with open("./Day 25 - CSV Files and Analysis/weather_data.csv") as my_file:
     contents= csv.reader(my_file)
     temperature =[]
@@ -8,4 +8,5 @@ with open("./Day 25 - CSV Files and Analysis/weather_data.csv") as my_file:
         print(row)
     print (temperature)
 
-import pandas
+data=pandas.read_csv(("./Day 25 - CSV Files and Analysis/weather_data.csv"))
+print(data)

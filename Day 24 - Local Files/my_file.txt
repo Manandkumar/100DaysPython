@@ -1,2 +1,6 @@
  Time the file is opened: 1713944716.254856 
  Time the file is opened: <attribute 'month' of 'datetime.date' objects> 
+ Time the file is opened: <attribute 'month' of 'datetime.date' objects> 
+ Time the file is opened: <attribute 'month' of 'datetime.date' objects> 
+ Time the file is opened: <attribute 'day' of 'datetime.date' objects> 
+ Time the file is opened: <attribute 'day' of 'datetime.date' objects> 

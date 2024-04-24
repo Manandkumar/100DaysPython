@@ -12,4 +12,4 @@ data_dic = {
 }
 
 data = pandas.DataFrame(data_dic)
-data.to_csv()
+data.to_csv("./Day 25 - CSV Files and Analysis/2018CentralPark_Analysis.csv")

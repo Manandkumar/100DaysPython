@@ -1,7 +1,10 @@
 import turtle
+import pandas
+
 screen =turtle.Screen()
 screen.title ("INIDA STATES - QUIZ")
 image= "./Day 25 - CSV Files and Analysis/India_Quiz/India_state.gif"
+data = pandas.read_csv("./Day 25 - CSV Files and Analysis/India_Quiz/states.csv")
 screen.addshape(image)
 
 turtle.shape(image)

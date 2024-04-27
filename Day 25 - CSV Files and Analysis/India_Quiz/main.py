@@ -10,21 +10,22 @@ answer_state= screen.textinput(title="Guess the state",prompt= "State name:")
 
 data = pandas.read_csv("./Day 25 - CSV Files and Analysis/India_Quiz/states.csv")
 all_states = data.state.to_list()
-guess_states =[]
+guessed_states =[]
 
-while len(guess_states)<=30:
-    answer_state =screen.textinput(title="Guess the state", prompt="Ampther state name?").title()
+while len(guessed_states)<=30:
+    answer_state =screen.textinput(title= f"{len(guessed_states)}/ 30 Staes Correct\n", prompt="Ampther state name?").title()
 
     if answer_state == "Exit":
         break
 
     if answer_state in all_states:
+        guessed_states.append(answer_state)
         t = turtle.Turtle()
         t.hideturtle()
         t.penup()
         state_data = data[data.state == answer_state]
-        # t.goto(state_data.x,state_data.y)
-        t.goto(0,0)
+        t.goto(state_data.x,state_data.y)
+    
        
         t.write(answer_state)
 

@@ -13,3 +13,6 @@ print(student_dataframe)
 
 for (key,value) in student_dataframe.items():
     print(value)
+
+for(index, row)in student_dataframe.iterrows():
+    print(row)

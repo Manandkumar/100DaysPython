@@ -7,4 +7,4 @@
 7
 8
 9
-10
+10{'father': 92, 'mother': 7, 'child': 29, 'GrandFather': 36, 'GrandMother': 91}{'father': 53, 'mother': 67, 'child': 58, 'GrandFather': 56, 'GrandMother': 84}{'father': 73, 'mother': 19, 'child': 48, 'GrandFather': 13, 'GrandMother': 4}{'father': 1, 'mother': 77, 'child': 33, 'GrandFather': 52, 'GrandMother': 56}

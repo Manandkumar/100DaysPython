@@ -7,7 +7,7 @@ window.minsize(width=600, height=400)
 
 #label 
 mylabel= tkinter.Label( text ="I'm a label ", font=("Arial", 24))
-mylabel.pack()
+mylabel.pack(side="left")
 
 
 

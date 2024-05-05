@@ -9,6 +9,14 @@ window.minsize(width=600, height=400)
 mylabel= tkinter.Label( text ="I'm a label ", font=("Arial", 24))
 mylabel.pack(side="left")
 
+# Advance Arugumnets 
+
+import turtle
+
+leo= turtle.Turtle()
+leo.write("left")
+
+
 
 
 

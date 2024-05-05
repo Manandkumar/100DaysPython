@@ -15,11 +15,20 @@ mylabel.pack(side="left")
 #button 
 
 def button_click():
+    mylabel["text"]= "Button is clicked"
+    mylabel.config(text="Button is clicked!")
+    entry_text=input.get()
+    mylabel.config(text=entry_text)
     print("you pressed me ")
 
 
 button = Button(text= "Press",command=button_click)
 button.pack()
+
+#entry
+
+input = Entry(width=10)
+input.pack()
 
 
 

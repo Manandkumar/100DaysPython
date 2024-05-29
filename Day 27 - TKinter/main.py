@@ -8,7 +8,10 @@ window.minsize(width=600, height=400)
 
 #label 
 mylabel= Label( text ="I'm a label ", font=("Arial", 24))
-mylabel.pack(side="left")
+mylabel.config(text="New Text")
+mylabel.grid(column=0,row=0)
+
+# mylabel.pack(side="left")
 
 # mylabel["text"] = "NEw Name -Anand"
 

@@ -1,38 +1,41 @@
 from tkinter import *
 
 window = Tk()
-window.title("My GIRD")
-window.minsize(width=600, height=400)
+window.title("Mile to KM Converter")
+window.minsize(width=300, height=300)
+window.config(padx=10,pady=10)
 
-#components inside the window
-
-#button funciton 
 def button_click():
-    mylabel= "Button Clicked"
+    miles = float(MyMiles.get())
+    km = miles*1.609
+    MyLabel3.config(text=km)
+
+#input box
+MyMiles = Entry(width=5)
+MyMiles.grid(row=0,column=1)
 
 #label 
-mylabel= Label( text ="I'm a label ", font=("Arial", 12))
-mylabel.grid(column=0,row=0)
+MyLabel1 = Label(text="Miles ",font=("Arial",12))
+MyLabel1.grid(row=0,column=2)
 
-# Button 
-mybutton= Button(text="New Button", command=button_click)
-mybutton.grid(column=2,row=0)
-# Button 
-mybutton2= Button(text="New Button2", command=button_click)
-mybutton2.grid(column=1,row=1)
+#label 
 
-#Entry
-myEntry = Entry(width=15)
-myEntry.grid(column=3,row=2)
+MyLabel = Label(text="is equal to ",font=("Arial",12))
+MyLabel.grid(row=1,column=1)
 
 
-Label( text ="I'm a label ", font=("Arial", 12))
-mylabel.grid(column=0,row=0)
+#label 
 
+MyLabel2= Label(text="Km ",font=("Arial",12))
+MyLabel2.grid(row=1,column=2)
 
+#button
+Mybutton = Button(text="Caluculate",command=button_click)
+Mybutton.grid(row=2,column=1)
 
-
-
+#label 
+MyLabel3 = Label(text=" 0 ",font=("Arial",12))
+MyLabel3.grid(row=1,column=2)
 
 
 window.mainloop()

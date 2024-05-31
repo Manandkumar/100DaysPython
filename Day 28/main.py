@@ -3,6 +3,7 @@ from tkinter import *
 black = "#1d3c45"
 orange = "#d2601a"
 cream = "#fff1e1"
+p_number =25
 
 
 # Timer Reset
@@ -12,11 +13,13 @@ cream = "#fff1e1"
 #Timer Mechanism
 
 def start_timer():
-    count_down(5)
+    count_down(5 *60)
 
 # Countdown 
 
 def count_down(count):
+
+
     canvas.itemconfig(timer_text,text=count)
     if count > 0:
         window.after(1000,count_down, count-1)

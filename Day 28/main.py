@@ -1,13 +1,13 @@
 from tkinter import *
 import math
 
-black = "#1d3c45"
-orange = "#d2601a"
-cream = "#fff1e1"
+BLACK = "#1d3c45"
+ORANGE = "#d2601a"
+CREAM = "#fff1e1"
 p_number =25
 reps =0
 
-WORK_MIN =1
+WORK_MIN = 5
 SHORT_BREAK_MIN=5
 LONG_BREAK_MIN=20
 
@@ -28,10 +28,13 @@ def start_timer():
     count_down(work_sec)
     if reps %8 ==0:
         count_down(long_break_sec)
+        title_label.config(text="Break", fg=ORANGE)
     elif reps %2 ==0:
         count_down(short_break_sec)
+        title_label.config(text="Break", fg=CREAM)
     else:
         count_down(work_sec)
+        title_label.config(text="Break", fg=BLACK)
 
 
 # Countdown 
@@ -47,20 +50,26 @@ def count_down(count):
         window.after(1000,count_down, count-1)
     else:
         start_timer()
+        marks=""
+        work_session= math.floor(reps/2)
+        for _ in range(work_session):
+            marks+="✔"
+        check_mark.config(text=marks)
+
 
 # UI Setup 
 
 window = Tk()
 window.title ("Pamodoro")
-window.config(padx=10,pady=10, bg=black)
+window.config(padx=10,pady=10, bg=BLACK)
 
 
 
-title_label = Label(text= "Timer",fg=orange,bg=black,font=("Arial",50))
+title_label = Label(text= "Timer",fg=ORANGE,bg=BLACK,font=("Arial",50))
 title_label.grid(column=1,row=0)
 
 
-canvas = Canvas(width=300, height=300,bg=cream)
+canvas = Canvas(width=300, height=300,bg=CREAM)
 timer_text=canvas.create_text(150,150, text="00:00", fill="red",font=("Arial",18))
 canvas.grid(column=1,row=1)
 
@@ -72,7 +81,7 @@ start_button.grid(column=0,row=2)
 reset_button = Button(text="Reset")
 reset_button.grid(column=2,row=2)
 
-check_mark = Label(text="✔",fg=orange,bg=black)
+check_mark = Label(fg=ORANGE,bg=BLACK)
 check_mark.grid(column=1,row=3)
 
 
